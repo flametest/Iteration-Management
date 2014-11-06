@@ -26,10 +26,16 @@
             <p>ERROR CODE SEARCH</p>
         </div>
         <div id="inputBox">
-            <input type="text" name="search" method="post" />
-            <input type="submit" value="search" />  
+            <form method="post" action="/result">
+                <input type="text" name="hex" />
+                <input type="submit" value="search" /> 
+            </form>
         </div>
-        
+        {% if error is True %}
+        <div id="errorInfo">
+            <p>Error Code Not Found!</p>
+        </div>
+        {%end%}
     </div>
 
 </body>
