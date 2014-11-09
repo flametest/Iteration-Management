@@ -6,102 +6,110 @@
     <title>Iteration Management</title>
 </head>
 <body>
-    <div id="dailyNotice">
-        <div class="bannerTitle">
-            <h4>PRIORITY ISSUE</h4>
+    <div class="mainContainer">
+        <div class="wideBox">
+            <div class="bannerTitle">
+                <h4>PRIORITY ISSUE</h4>
+            </div>
+
+            <div class="box1Content">
+                <p>Important: Mozilla 5+ or Chrome 17+ recommended.</p>
+            </div>
+            
+        </div>
+        <div class="leftContainer">
+            <div class="midBox">
+                <div class="bannerTitle">
+                    <h4>CI STATUS</h4>
+                </div>
+                <div class="box2Content">
+                    <div class="statusContainer">
+                        <div id="circleBorder" class="circle-border">
+                            <div id="circle" class="circle">
+                                <span class="prec" id="dotscan">0%</span>
+                            </div>
+                        </div>
+                        <p><em>DOTSCAN</em></p>
+                    </div>
+                    <div class="statusContainer">
+                        <div id="circleBorder" class="circle-border">
+                            <div id="circle" class="circle">
+                                <span class="prec" id="dotscan">0%</span>
+                            </div>
+                        </div>
+                         <p><em>BUILD</em></p>
+                    </div>
+                    <div class="statusContainer">
+                        <div id="circleBorder" class="circle-border">
+                            <div id="circle" class="circle">
+                                <span class="prec" id="dotscan">0%</span>
+                            </div>
+                        </div>
+                        <p><em>COMMIT</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightContainer">
+            <div class="midBox">
+                <div class="bannerTitle">
+                    <h4>BURNING DOWN</h4>
+                </div>
+                <div class="box2Content">
+                    
+                </div>
+            </div>
+        </div>
+        <div class="wideBox">
+            <div class="bannerTitle">
+                <h4>CODE REVIEW</h4>
+            </div>
+            <div class="box1Content">
+                
+            </div>
+            
+        </div>
+        <div class="leftContainer">
+            <div class="midBox">
+                <div class="bannerTitle">
+                    <h4>PACKAGE SIZE</h4>
+                </div>
+                <div class="box2Content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sideBar">
+        <div id="welcomeBox">
+            <div class="bannerTitle">
+                <h4>WELCOME</h4>
+            </div>
+        </div>
+        <div id="searchBox">
+            <div class="bannerTitle">
+                <h4>ERROR CODE SEARCH</h4>
+            </div>
+            <div id="inputBox">
+                <form method="post" action="/result">
+                    <input type="text" name="hex" />
+                    <input type="submit" value="search" /> 
+                </form>
+            </div>
+            {% if error is True %}
+            <div id="errorInfo">
+                <p>Error Code Not Found!</p>
+            </div>
+            {%end%}
         </div>
 
-        <div class="box1Content">
-            <p>Important</p>
-        </div>
-        
-    </div>
-    <div id="welcomeBox">
-        <div class="bannerTitle">
-            <h4>WELCOME</h4>
-        </div>
-    </div>
-    <div id="searchBox">
-        <div class="bannerTitle">
-            <h4>ERROR CODE SEARCH</h4>
-        </div>
-        <div id="inputBox">
-            <form method="post" action="/result">
-                <input type="text" name="hex" />
-                <input type="submit" value="search" /> 
-            </form>
-        </div>
-        {% if error is True %}
-        <div id="errorInfo">
-            <p>Error Code Not Found!</p>
-        </div>
-        {%end%}
-    </div>
-    <div id="ciStatusBox">
-        <div class="bannerTitle">
-            <h4>CI STATUS</h4>
-        </div>
-        <div class="box2Content">
-            <div id="dotscanContainer">
-				<div id="circleBorder" class="circle-border">
-					<div id="circle" class="circle">
-						<span class="prec" id="dotscan">0%</span>
-					</div>
-				</div>
-				<p><em>DOTSCAN</em></p>
-			</div>
-			<div id="buildContainer">
-				<div id="circleBorder" class="circle-border">
-					<div id="circle" class="circle">
-						<span class="prec" id="dotscan">0%</span>
-					</div>
-				</div>
-			     <p><em>BUILD</em></p>
-			</div>
-			<div id="commitContainer">
-				<div id="circleBorder" class="circle-border">
-					<div id="circle" class="circle">
-						<span class="prec" id="dotscan">0%</span>
-					</div>
-				</div>
-				<p><em>COMMIT</em></p>
-			</div>
-        </div>
-    </div>
-    <div id="burningDownBox">
-        <div class="bannerTitle">
-            <h4>BURNING DOWN</h4>
-        </div>
-        <div class="box2Content">
-            
-        </div>
-    </div>
-    <div id="codeReviewBox">
-        <div class="bannerTitle">
-            <h4>CODE REVIEW</h4>
-        </div>
-        <div class="box1Content">
-            
-        </div>
-        
-    </div>
-    <div id="packageSizeBox">
-        <div class="bannerTitle">
-            <h4>PACKAGE SIZE</h4>
-        </div>
-        <div class="box2Content">
-            
-        </div>
     </div>
     <!-- footer -->
-    <div class="footer">
-        <div class="container">
-            <p>©2014 HERT RB OM <a href="mailto:flametest@gmail.com">Contact me</a></p>
-        </div>      
+    <div class="footerContainer">
+        <div class="footer">
+            <p>©2014 HERT RB OM <a href="mailto:flametest@gmail.com">Contact me</a></p>  
+        </div>
     </div>
-
-    <script type="text/javascript" src="static/js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="static/js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="static/js/script.js"></script>
+    
 </body>
 </html>
