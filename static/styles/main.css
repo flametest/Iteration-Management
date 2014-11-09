@@ -1,109 +1,158 @@
+html {
+    font-family: "Whitney SSm A", "Whitney SSm B", "Lucida Grande", "Lucida Sans", Verdana, Helvetica, Arial, sans-serif;
+}
 body{
     width: 100%;
     height: 100%;
     background-color: rgb(113,150,159);
+    clear:both;
 }
-#dailyNotice {
-    height: 300px;
-    width: 1000px;
-    left: 10px;
-    top: 10px;
-    border-radius: 0.5rem;
+a {
+    text-decoration: none;
+}
+a:link, a:visited {
+
+}
+a:hover, a:active {
+
+}
+p {
+    padding:auto;
+    margin: 2%;
+    
+}
+.mainContainer {
+    width: 70%;
+    float: left;
+}
+.wideBox {
+    height: 350px;
+    width: 97.6%;
+    margin: 10px;
     position: relative;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
+    -moz-box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
+    -webkit-box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
     background-color: rgb(204,202,169); 
-}
-#welcomeBox{
-    height: 200px;
-    width: 250px;
-    left: 1030px;
-    top: -312px;
-    border-radius: 0.5rem;
-    position: relative;
-    background-color: rgb(204,202,169); 
-}
-#searchBox {
-    height: 94px;
-    width: 250px;
-    left: 1030px;
-    top: -322px;
-    border-radius: 0.5rem;
-    position: relative;
-    background-color: rgb(204,202,169); 
-}
-#inputBox {
-    position: relative;
-    top:15px;
-    margin-left: 8px;
-}
-.bannerTitle {
-    height: 20px;
-    width: 200px;
-    position: relative;
-    top:5px;
-    border-radius: 0.2rem;
-    margin-left: 10px;
-    background-color: rgb(213,26,33);
+    clear: both;
 }
 .box1Content {
-    height: 250px;
-    width: 970px;
+    height: 310px;
+    width: 97.6%;
     margin:10px;
     color: rgb(158,157,131);
-    border-radius: 0.5rem;
-    position: relative;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -box-shadow: 2px 2px 2px rgba(0,49,79,0.7);
+    -moz-box-shadow: 2px 2px 2px rgba(0,49,79,0.7);
+    -webkit-box-shadow: 2px 2px 2px rgba(0,49,79,0.7);
+    float: left;
+    position: absolute;
     background-color: rgb(0,49,79);
 }
-#errorInfo {
-    margin-left: 10px;
-    position: relative;
-    top:5px;
+
+.leftContainer {
+    width: 48.2%;
+    float: left;
 }
-#ciStatusBox {
+.rightContainer {
+    margin-left: 12px;
+    width: 48.1%;
+    float: left;
+}
+
+.midBox {
     height: 350px;
-    width: 490px;
-    left: 10px;
-    top: -320px;
-    border-radius: 0.5rem;
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
+    -moz-box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
+    -webkit-box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
     position: relative;
+    clear: both;
     background-color: rgb(204,202,169);
 }
 .box2Content {
     height: 310px;
-    width: 468px;
-    top:10px;
+    width: 95%;
+    margin:10px;
     color: rgb(158,157,131);
-    border-radius: 0.5rem;
-    position: relative;
-    margin-left: 10px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -box-shadow: 2px 2px 2px rgba(0,49,79,0.7);
+    -moz-box-shadow: 2px 2px 2px rgba(0,49,79,0.7);
+    -webkit-box-shadow: 2px 2px 2px rgba(0,49,79,0.7);
     background-color: rgb(0,49,79);
+    position: absolute;
 }
-#burningDownBox {
-    height: 350px;
-    width: 490px;
-    left: 520px;
-    top: -690px;
-    border-radius: 0.5rem;
-    position: relative;
-    background-color: rgb(204,202,169);
+.bannerTitle {
+    height: 20px;
+    width: 200px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -box-shadow: 1px 1px 1px rgba(213,26,33,0.7);
+    -moz-box-shadow: 1px 1px 1px rgba(213,26,33,0.7);
+    -webkit-box-shadow: 1px 1px 1px rgba(213,26,33,0.7);
+    margin-left: 10px;
+    background-color: rgb(213,26,33);
 }
-#codeReviewBox {
-    height: 300px;
-    width: 1000px;
-    left: 10px;
-    top: -690px;
-    border-radius: 0.5rem;
-    position: relative;
+.sideBar {
+    width: 27%;
+    float: left;
+}
+#welcomeBox{
+    height: 230px;
+    width: 97.6%;
+    margin: 10px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
+    -moz-box-shadow: 1px 1px 1px rgba(204,202,169,0.7); 
+    -webkit-box-shadow: 1px 1px 1px rgba(204,202,169,0.7); 
     background-color: rgb(204,202,169); 
 }
-#packageSizeBox {
-    height: 350px;
-    width: 490px;
-    left: 10px;
-    top: -680px;
-    border-radius: 0.5rem;
-    position: relative;
-    background-color: rgb(204,202,169);
+#searchBox {
+    height: 98px;
+    margin: 10px;
+    width: 97.6%;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
+    -moz-box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
+    -webkit-box-shadow: 1px 1px 1px rgba(204,202,169,0.7);
+    background-color: rgb(204,202,169); 
 }
+
+#inputBox {
+    position: relative;
+    padding-top: 10px;
+}
+
+.prec{
+    top: 20px;
+    position: relative;
+    font-size: 30px;
+}
+.statusContainer {
+    padding: 3%;
+    float: left;
+    position: relative;
+}
+.statusContainer p {
+    text-align: center;
+}
+
 .circle{
     position: relative;
     top: 15px;
@@ -126,50 +175,24 @@ body{
         linear-gradient(90deg, rgb(204,202,169) 50%, transparent 50%);
     
 }
-.prec{
-    top: 20px;
-    position: relative;
-    font-size: 30px;
-}
-#dotscanContainer {
-	top: 20px;
-	left: 25px;
-	position: relative;
-}
-#buildContainer {
-	top: -125px;
-	left: 175px;
-	position: relative;
-}
-#commitContainer {
-	top: -275px;
-	left: 325px;
-	position: relative;
+.footerContainer {
+    float: left;
+    width: 96%;
+    margin: 10px;
 }
 .footer {
-    margin-bottom: 30px;
     height: 30px;
-    width: 1000px;
-    left: 10px;
-    border-radius: 0.5rem;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -box-shadow: 2px 2px 2px rgba(0,49,79,0.7);
+    -moz-box-shadow: 2px 2px 2px rgba(0,49,79,0.7);
+    -webkit-box-shadow: 2px 2px 2px rgba(0,49,79,0.7);
+    font-size: 80%;
     color: white;
-    position: relative;
     background-color: rgb(0,49,79); 
 }
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    line-height:30px;
-}
-em {
-	position: center;
-}
-p {
-    display: block;
-    padding:auto;
-    margin: 10px;
-    
-}
-html {
-    font-family: "Whitney SSm A", "Whitney SSm B", "Lucida Grande", "Lucida Sans", Verdana, Helvetica, Arial, sans-serif;
+.footer p {
+    padding: 10px;
+    margin-left: 10px;
 }
